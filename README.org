@@ -1,0 +1,25 @@
+* Piper
+
+A simple, tough, airworthy pipline template
+work in progress, it works but is not entirely tested as a general use
+All code has been used in production and suits my needs well as a development workflow.
+
+Piper can also wrap over existing manual workflows.
+
+* run.sh
+
+These calls indirectly call piper and ensure nice logfile handling
+
+single input interactive mode
+./run.sh
+single input noninteractive
+./run.sh full
+multiple inputs in inputBatch dir, noninteractive
+./run.sh batch
+
+For batch calls read run.sh and modify for your needs
+
+
+* piper.sh
+
+Can be called directly for interactive use
