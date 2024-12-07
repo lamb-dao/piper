@@ -76,6 +76,11 @@ function markStep () {
     )
 }
 
+#begin block comment
+:<<'MASK'
+MASK
+#end block comment
+
 #===================
 # clean data for this run, leave input and checkpoints
 step="sweep_Begin"
