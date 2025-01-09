@@ -24,12 +24,6 @@ checkpoints=${home}/checkpoints
 # piper requires checkpoints; -p will check and create if necessary
 mkdir -p ${checkpoints}
 
-## create paths to &&& recommended locations
-input=${home}/input
-data=${home}/data
-scripts=${home}/scripts
-output=${home}/output
-
 #### functions
 function doStep () {
     # doStep stepName, to check if a step is incomplete, returns true if step is required

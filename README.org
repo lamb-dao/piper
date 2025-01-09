@@ -1,25 +1,42 @@
 * Piper
 
-A simple, tough, airworthy pipline template
-work in progress, it works but is not entirely tested as a general use
+A simple, tough, airworthy pipeline template
 All code has been used in production and suits my needs well as a development workflow.
+I find this to the be the right level of abstraction for directing new OR preexisting bash pipelines.
 
-Piper can also wrap over existing manual workflows.
+Piper can also wrap over existing cited manual workflows.
+It is designed to be clean and easy to reduce in complexity so that there is no need to make any modifications to established/cited procedures;
+While still gaining reproducibility and clean collection of documentation.
+
+This should be considered work-in-progress, or rather, working-code that changes as needed.
+Read and understand all code before use.
 
 * run.sh
 
 These calls indirectly call piper and ensure nice logfile handling
 
-single input interactive mode
-./run.sh
-single input noninteractive
-./run.sh full
-multiple inputs in inputBatch dir, noninteractive
-./run.sh batch
+- single input interactive mode
+=./run.sh=
+
+- single input noninteractive
+=./run.sh full=
+
+- multiple inputs in inputBatch dir, noninteractive
+=./run.sh batch=
 
 For batch calls read run.sh and modify for your needs
 
-
 * piper.sh
 
-Can be called directly for interactive use
+Can be called directly during workup of the pipeline.
+
+* Checkpoints
+
+The checkpoint dir simply contains empty files named <stepName>
+Delete a file to rerun the step. While the content of the files is unimportant, I put temporary notes in them during workup.
+
+* Dir hierarchy
+
+dirs checkpoints, input, data, scripts and output will be created as needed.
+
+The dir data is for working data and copies of data from input it will be emptied by sweep steps to ensure reproducible runs.
