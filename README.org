@@ -37,6 +37,6 @@ Delete a file to rerun the step. While the content of the files is unimportant, 
 
 * Dir hierarchy
 
-dirs checkpoints, input, data, scripts and output will be created as needed.
+Dirs checkpoints, input, data, scripts and output will be created as needed.
 
 The dir data is for working data and copies of data from input it will be emptied by sweep steps to ensure reproducible runs.
